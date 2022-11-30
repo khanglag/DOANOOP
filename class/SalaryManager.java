@@ -6,12 +6,12 @@ public class SalaryManager implements RoleOfManager {
 
     static Scanner scanner = new Scanner(System.in);
 
-    long baseSalary;
+    long baseSalary = 200000;
 
     @Override
     public void inputList() {
-        System.out.print(" ==> Enter base salary this month: ");
-        baseSalary = Long.parseLong(scanner.nextLine());
+        
+        
         for (int i = 0; i < Handle.n; i++) {
             System.out.println(
                     "Enter information about employee with id: " + Handle.listAccount[i].getEmployee().getIdEmp());
