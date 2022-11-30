@@ -5,13 +5,15 @@ public class Salary implements InOut {
     static Scanner scanner = new Scanner(System.in);
     private int indexSalary;
     private int someHolidays;
+    private double overtime;
     private long totalSalary;
 
     public Salary() {
     }
 
-    public Salary(int indexSalary, int someHolidays, long totalSalary) {
+    public Salary(int indexSalary,double overtime, int someHolidays, long totalSalary) {
         this.indexSalary = indexSalary;
+        this.overtime = overtime;
         this.someHolidays = someHolidays;
         this.totalSalary = totalSalary;
     }
@@ -22,6 +24,15 @@ public class Salary implements InOut {
 
     public void setIndexSalary(int indexSalary) {
         this.indexSalary = indexSalary;
+    }
+
+    public double getOvertime() {
+        return overtime;
+    }
+
+    public void setOvertime(double overtime) {
+        System.out.print("==> Enter a number of overtime: ");
+        this.overtime = overtime;
     }
 
     public int getSomeHolidays() {
@@ -56,7 +67,7 @@ public class Salary implements InOut {
     }
 
     public Long payRoll(Long baseSalary, int indexSalary) {
-        totalSalary = (long) baseSalary * indexSalary * 30 - someHolidays * baseSalary;
+        totalSalary = (long) baseSalary * indexSalary * 30 - someHolidays * baseSalary + (long) (overtime*25000);
         return totalSalary;
     }
 
