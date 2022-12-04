@@ -2,8 +2,7 @@
 
 <h1 align="center">PROJECT OOP</h1>
 <br>
-Nguyen Tien Phat<br>
-Hoang Gia Bao<br>
+Do Minh Khang
 
 ## Login(Y)
     Y {
