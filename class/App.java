@@ -14,7 +14,7 @@ public class App {
 
     public static void end() {
         FileUtil.setData();
-    }
+        }
 
     public static void main(String[] args) {
         init();
